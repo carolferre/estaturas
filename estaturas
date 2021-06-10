@@ -1,0 +1,23 @@
+
+valorestaturas=[]
+contador=0
+i=0
+suma=0
+media=0
+#con range hacemos recorrido de 0 a 40
+for i in range(40):
+    estaturas=int(input())
+    contador+=1
+    if (estaturas<=0):
+        print("Estatura no válida")
+        exit()
+    suma=suma+estaturas
+    #añadimos los datos de las estaturas en una lista
+    valorestaturas.append(estaturas)
+
+print("El total de las estaturas registradas es: ")
+print(valorestaturas)
+media=suma/contador
+print("La media de las estaturas es= ",media)
+print("La estatura máxima es= ",max(valorestaturas)," cm")
+print("La estatura mínima es= ",min(valorestaturas)," cm")
